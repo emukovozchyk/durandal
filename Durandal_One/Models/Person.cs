@@ -10,9 +10,9 @@
         {
         }
 
-        public Person(int personId, string name, int age)
+        public Person(int id, string name, int age)
         {
-            PersonId = personId;
+            PersonId = id;
             Name = name;
             Age = age;
         }

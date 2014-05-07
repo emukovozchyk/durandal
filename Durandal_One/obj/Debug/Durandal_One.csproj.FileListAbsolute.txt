@@ -68,3 +68,7 @@ D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Razor.xml
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.csprojResolveAssemblyReference.cache
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.dll
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.pdb
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.xml
