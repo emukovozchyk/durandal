@@ -40,6 +40,8 @@ D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.SqlServer.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\Microsoft.Web.Infrastructure.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\Newtonsoft.Json.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Net.Http.Formatting.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Helpers.dll
@@ -55,6 +57,8 @@ D:\!REPOSITORY\durandal\Durandal_One\bin\WebActivator.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\WebGrease.dll
 D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.SqlServer.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\Newtonsoft.Json.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Net.Http.Formatting.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Helpers.xml
@@ -65,10 +69,5 @@ D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Razor.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Deployment.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Razor.xml
-D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.csprojResolveAssemblyReference.cache
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.dll
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.pdb
-D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.dll
-D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.dll
-D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Bson.xml
-D:\!REPOSITORY\durandal\Durandal_One\bin\MongoDB.Driver.xml

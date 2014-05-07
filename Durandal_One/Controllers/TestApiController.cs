@@ -15,24 +15,24 @@ namespace Durandal_One.Controllers
         private static readonly MongoClient Client = new MongoClient("mongodb://testDurandal:test@ds063178.mongolab.com:63178/appharbor_b0e0c4d0-2c7c-4170-aff1-7b173d648a99");
         private static readonly MongoServer Server = Client.GetServer();
         private static readonly MongoDatabase Db = Server.GetDatabase("appharbor_b0e0c4d0-2c7c-4170-aff1-7b173d648a99");
-        readonly MongoCollection<PersonMD> _collection = Db.GetCollection<PersonMD>("people");
+        readonly MongoCollection<Person> _collection = Db.GetCollection<Person>("people");
+
 
         [HttpGet]
         public IEnumerable<Person> GetAllPersons()
         {
-            var query = from e in _collection.AsQueryable() select e;
-            var people = query.Select(p => new Person(p.PersonId, p.Name, p.Age)).ToList();
-            return people;
+            var query = (from e in _collection.AsQueryable() select e).ToList();
+            return query;
         }
 
         [HttpGet]
-        public Person GetPerson(int id)
+        public Person GetPerson(string id)
         {
-            var query = Query<PersonMD>.EQ(e => e.PersonId, id);
+            var query = Query<Person>.EQ(e => e.Id, id);
             var p = _collection.FindOne(query);
             if (p != null)
             {
-                return new Person(p.PersonId, p.Name, p.Age);
+                return p;
             }
             throw new HttpResponseException(HttpStatusCode.NotFound);
         }
@@ -40,23 +40,21 @@ namespace Durandal_One.Controllers
         [HttpPost]
         public HttpResponseMessage PostPerson(Person person)
         {
-            var max = (from e in _collection.AsQueryable() orderby e.PersonId descending select e.PersonId).FirstOrDefault();
-            var pToAdd = new PersonMD(max+1, person.Name, person.Age);
-            _collection.Insert(pToAdd);
+            _collection.Insert(person);
             return Request.CreateResponse(HttpStatusCode.Created);
         }
 
         [HttpDelete]
-        public void DeletePerson(int id)
+        public void DeletePerson(string id)
         {
-            var query = Query<PersonMD>.EQ(e => e.PersonId, id);
+            var query = Query<Person>.EQ(e => e.Id, id);
             _collection.Remove(query);
         }
 
         [HttpPut]
-        public void PutPerson(int id, Person person)
+        public void PutPerson(string id, Person person)
         {
-            var query = Query<PersonMD>.EQ(e => e.PersonId, id);
+            var query = Query<Person>.EQ(e => e.Id, id);
             var personExisting = _collection.FindOne(query);
             personExisting.Name = person.Name;
             personExisting.Age = person.Age;

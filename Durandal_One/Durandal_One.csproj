@@ -146,10 +146,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\OfflineRep.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\PersonMD.cs" />
-    <Compile Include="Models\PersonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@
         self.editPerson = function () {
             self.bufferedItem.Name = self.editName();
             self.bufferedItem.Age = self.editAge();
-            $.ajax("/api/testapi/PutPerson?id=" + self.bufferedItem.PersonId, {
+            $.ajax("/api/testapi/PutPerson?id=" + self.bufferedItem.Id, {
                 data: ko.toJSON(self.bufferedItem),
                 type: "put",
                 contentType: "application/json"

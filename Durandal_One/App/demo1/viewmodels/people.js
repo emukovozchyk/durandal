@@ -1,7 +1,7 @@
 ﻿define(['durandal/app', 'knockout'], function (app, ko) {
     
     function Person(item) {
-        this.PersonId = ko.observable(item.PersonId);
+        this.Id = ko.observable(item.Id);
         this.Name = ko.observable(item.Name);
         this.Age = ko.observable(item.Age);
     }
@@ -33,7 +33,7 @@
                     self.people.remove(p);
                     $.ajax({
                         type: 'DELETE',
-                        url: '/api/testapi/DeletePerson?id=' + p.PersonId()
+                        url: '/api/testapi/DeletePerson?id=' + p.Id()
                     });
                 }
             });
