@@ -1,4 +1,4 @@
-﻿define(['durandal/app', 'knockout', 'plugins/router', 'ko-validation'], function (app, ko, router, validation) {
+﻿define(['durandal/app', 'knockout', 'plugins/router'], function (app, ko, router) {
 
     function Person(item) {
         this.Name = ko.observable(item.Name);

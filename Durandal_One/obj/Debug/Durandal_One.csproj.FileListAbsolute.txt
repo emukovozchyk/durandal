@@ -33,3 +33,38 @@ C:\Users\JK\Documents\Visual Studio 2012\Projects\DURANDAL_SERIES\Durandal_One\D
 C:\Users\JK\Documents\Visual Studio 2012\Projects\DURANDAL_SERIES\Durandal_One\Durandal_One\obj\Debug\Durandal_One.dll
 C:\Users\JK\Documents\Visual Studio 2012\Projects\DURANDAL_SERIES\Durandal_One\Durandal_One\obj\Debug\Durandal_One.pdb
 C:\Users\JK\Documents\Visual Studio 2012\Projects\DURANDAL_SERIES\Durandal_One\Durandal_One\obj\Debug\Durandal_One.csprojResolveAssemblyReference.cache
+D:\!REPOSITORY\durandal\Durandal_One\bin\Durandal_One.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\Durandal_One.pdb
+D:\!REPOSITORY\durandal\Durandal_One\bin\Antlr3.Runtime.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.SqlServer.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\Microsoft.Web.Infrastructure.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\Newtonsoft.Json.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Net.Http.Formatting.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Helpers.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Http.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Http.WebHost.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Mvc.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Optimization.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Razor.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Deployment.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Razor.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\WebActivator.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\WebGrease.dll
+D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\EntityFramework.SqlServer.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\Newtonsoft.Json.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Net.Http.Formatting.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Helpers.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Http.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Http.WebHost.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Mvc.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.Razor.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Deployment.xml
+D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Razor.xml
+D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.csprojResolveAssemblyReference.cache
+D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.dll
+D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.pdb

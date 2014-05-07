@@ -6,16 +6,12 @@
         'transitions': '../Scripts/durandal/transitions',
         'knockout': '../Scripts/knockout-2.3.0',
         'bootstrap': '../Scripts/bootstrap.min',
-        'jquery': '../Scripts/jquery-1.9.1.min',
-        'ko-validation': '../Scripts/knockout.validation'
+        'jquery': '../Scripts/jquery-1.9.1.min'
     },
     shim: {
         'bootstrap': {
             deps: ['jquery'],
             exports: 'jQuery'
-        },
-        'ko-validation': {
-            deps: ['knockout']
         }
     }
 });

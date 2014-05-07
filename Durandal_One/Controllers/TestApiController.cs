@@ -9,18 +9,18 @@ namespace Durandal_One.Controllers
 {
     public class TestApiController : ApiController
     {
-        private readonly PersonRepository _personRep = new PersonRepository();
+        //private readonly PersonRepository _personRep = new PersonRepository();
 
         [HttpGet]
         public IEnumerable<Person> GetAllPersons()
         {
-            return _personRep.Peoples;
+            return OfflineRep.ListOfPerson;
         }
 
         [HttpGet]
         public Person GetPerson(int id)
         {
-            var person = _personRep.Peoples.Find(id);
+            var person = OfflineRep.ListOfPerson.Find(q=>q.PersonId.Equals(id));
             if (person != null)
             {
                 return person;
@@ -31,19 +31,19 @@ namespace Durandal_One.Controllers
         [HttpPost]
         public HttpResponseMessage PostPerson(Person person)
         {
-            _personRep.Peoples.Add(person);
-            _personRep.SaveChanges();
+            var lastId = OfflineRep.ListOfPerson.Max(q => q.PersonId);
+            person.PersonId = lastId + 1;
+            OfflineRep.ListOfPerson.Add(person);
             return Request.CreateResponse(HttpStatusCode.Created);
         }
 
         [HttpDelete]
         public void DeletePerson(int id)
         {
-            var personToDelete = _personRep.Peoples.First(q => q.PersonId.Equals(id));
+            var personToDelete = OfflineRep.ListOfPerson.Find(q => q.PersonId.Equals(id));
             if (personToDelete != null)
             {
-                _personRep.Peoples.Remove(personToDelete);
-                _personRep.SaveChanges();
+                OfflineRep.ListOfPerson.Remove(personToDelete);
             }
             else
             {
@@ -54,12 +54,11 @@ namespace Durandal_One.Controllers
         [HttpPut]
         public void PutPerson(int id, Person person)
         {
-            var found = _personRep.Peoples.Find(id);
+            var found = OfflineRep.ListOfPerson.Find(q=>q.PersonId.Equals(id));
             if (found != null)
             {
-                person.PersonId = id;
-                _personRep.Entry(found).CurrentValues.SetValues(person);
-                _personRep.SaveChanges();
+                found.Name = person.Name;
+                found.Age = person.Age;
             }
 
         }
