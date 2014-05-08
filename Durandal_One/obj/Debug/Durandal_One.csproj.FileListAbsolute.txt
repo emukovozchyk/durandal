@@ -71,4 +71,3 @@ D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Deployment.xml
 D:\!REPOSITORY\durandal\Durandal_One\bin\System.Web.WebPages.Razor.xml
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.dll
 D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.pdb
-D:\!REPOSITORY\durandal\Durandal_One\obj\Debug\Durandal_One.csprojResolveAssemblyReference.cache
