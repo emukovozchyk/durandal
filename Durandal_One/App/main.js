@@ -15,9 +15,6 @@
             deps: ['jquery'],
             exports: 'jQuery'
         },
-        'knockout.validation': {
-            deps: ['knockout']
-        },
         'toastr': {
             deps: ['jquery']
         }

@@ -1,3 +1,5 @@
-﻿<input type="text" data-bind="value: editName" />
-<input type="number" data-bind="value: editAge" />
+﻿<input type="text" data-bind="value: editName" /><br/>
+<p data-bind="validationMessage: editName"></p><br />
+<input type="number" data-bind="value: editAge" /><br/>
+<p data-bind="validationMessage: editAge"></p><br />
 <button data-bind="click: editPerson">Save</button>

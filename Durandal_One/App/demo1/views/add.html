@@ -1,7 +1,9 @@
 ﻿<div>
     <div class="col-md-6">
-        <input type="text" data-bind="value: inputName" />
-        <input type="number" data-bind="value: inputAge" />
+        <input type="text" data-bind="value: inputName" /><br />
+        <p data-bind="validationMessage: inputName"></p><br />
+        <input type="number" data-bind="value: inputAge" /><br/>
+        <p data-bind="validationMessage: inputAge"></p><br />
         <button data-bind="click: addPerson">Add</button>
     </div>
 </div>
