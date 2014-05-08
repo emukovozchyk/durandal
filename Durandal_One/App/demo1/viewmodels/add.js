@@ -1,4 +1,19 @@
-﻿define(['durandal/app', 'knockout', 'plugins/router'], function (app, ko, router) {
+﻿define(['durandal/app', 'knockout', 'plugins/router', 'knockout.validation', 'toastr'], function (app, ko, router, validator, toastr) {
+
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "positionClass": "toast-bottom-right",
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
 
     function Person(item) {
         this.Name = ko.observable(item.Name);
@@ -12,7 +27,7 @@
             required: true,
             minLength: 3
         });
-        self.inputAge = ko.observable('');
+        self.inputAge = ko.observable('').extend({ required: true });;
 
 
         self.addPerson = function () {
@@ -20,7 +35,13 @@
             $.ajax("/api/testapi/PostPerson", {
                 data: ko.toJSON(newPerson),
                 type: "POST",
-                contentType: "application/json"
+                contentType: "application/json",
+                success: function() {
+                    toastr.success('Added!', 'Add new person');
+                },
+                error: function() {
+                    toastr.error('Something go wrong!', 'Add new person');
+                }
             }).then(function() {
                 router.navigate('');
             });
