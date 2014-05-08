@@ -20,8 +20,8 @@
     };
 
     var ViewModel = {        
-        editName: ko.observable('').extend({ required: true, minLength: 3 }),
-        editAge: ko.observable('').extend({ required: true, max: 100, min: 10 }),
+        editName: ko.observable('').extend({ required: true, minLength: 5, maxLength: 20 }),
+        editAge: ko.observable('').extend({ required: true, max: 100, min: 18 }),
 
         bufferedItem: ko.observable(''),
 

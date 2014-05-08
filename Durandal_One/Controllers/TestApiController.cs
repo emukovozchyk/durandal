@@ -40,8 +40,12 @@ namespace Durandal_One.Controllers
         [HttpPost]
         public HttpResponseMessage PostPerson(Person person)
         {
-            _collection.Insert(person);
-            return Request.CreateResponse(HttpStatusCode.Created);
+            if (ModelState.IsValid)
+            {
+                _collection.Insert(person);
+                return Request.CreateResponse(HttpStatusCode.Created);
+            }
+            return Request.CreateResponse(HttpStatusCode.InternalServerError);
         }
 
         [HttpDelete]
@@ -54,12 +58,15 @@ namespace Durandal_One.Controllers
         [HttpPut]
         public void PutPerson(string id, Person person)
         {
-            var query = Query<Person>.EQ(e => e.Id, id);
-            var personExisting = _collection.FindOne(query);
-            personExisting.Name = person.Name;
-            personExisting.Age = person.Age;
+            if (ModelState.IsValid)
+            {
+                var query = Query<Person>.EQ(e => e.Id, id);
+                var personExisting = _collection.FindOne(query);
+                personExisting.Name = person.Name;
+                personExisting.Age = person.Age;
 
-            _collection.Save(personExisting);
+                _collection.Save(personExisting);
+            }
         }
     }
 }

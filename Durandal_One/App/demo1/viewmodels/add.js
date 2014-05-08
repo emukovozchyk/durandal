@@ -25,8 +25,8 @@
     }
 
     var ViewModel = {        
-        inputName: ko.observable('').extend({ required: true, minLength: 3 }),
-        inputAge: ko.observable('').extend({ required: true, max: 100, min: 10 }),
+        inputName: ko.observable('').extend({ required: true, minLength: 5, maxLength: 20 }),
+        inputAge: ko.observable('').extend({ required: true, max: 100, min: 18 }),
 
         addPerson: function () {
             if (ViewModel.errors().length == 0) {
